@@ -12,7 +12,7 @@ def split_zones(data):
         if data["class_disp"][i] == data["class_disp"][i-1]:
             continue
         else:
-            print(init_ix, i, sum(data["class_disp"][init_ix: i]))
+            # print(init_ix, i, sum(data["class_disp"][init_ix: i]))
             results.append(data.iloc[init_ix:i,:])
             init_ix = i
     return results
